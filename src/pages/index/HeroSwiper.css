@@ -1,0 +1,214 @@
+.hero-swiper-container {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.heroSwiper {
+  width: 100%;
+  height: 90vh; /* Reduced from 100vh to 90vh */
+  max-height: 900px; /* Reduced maximum height */
+  overflow: hidden; /* Added to remove scroll */
+}
+
+.swiper-slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 800px;
+  margin-top: -50px; /* Pull content up slightly */
+}
+
+.title {
+  font-size: 2.8rem; /* Slightly reduced from 3rem */
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.6rem; /* Slightly reduced from 1.8rem */
+  margin-bottom: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Swiper navigation buttons */
+.heroSwiper .swiper-button-next,
+.heroSwiper .swiper-button-prev {
+  color: #550000 !important;
+  background: rgba(255, 255, 255, 0.6);
+  width: 45px !important; /* Slightly reduced from 50px */
+  height: 45px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSwiper .swiper-button-next:after,
+.heroSwiper .swiper-button-prev:after {
+  font-size: 22px !important; /* Slightly reduced from 25px */
+  font-weight: bold;
+}
+
+/* Swiper pagination */
+.heroSwiper .swiper-pagination-bullet {
+  width: 12px; /* Slightly reduced from 14px */
+  height: 12px;
+  background: white;
+  opacity: 0.6;
+}
+
+.heroSwiper .swiper-pagination-bullet-active {
+  background: #550000;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1600px) {
+  .heroSwiper {
+    max-height: 800px; /* Reduced from 900px */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Reduced from 2.8rem */
+  }
+  
+  .subtitle {
+    font-size: 1.4rem; /* Reduced from 1.6rem */
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroSwiper {
+    max-height: 700px; /* Reduced from 800px */
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroSwiper {
+    max-height: 600px; /* Reduced from 700px */
+    height: 85vh; /* Further reduced height on tablets */
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .heroSwiper .swiper-button-next,
+  .heroSwiper .swiper-button-prev {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  
+  .heroSwiper .swiper-button-next:after,
+  .heroSwiper .swiper-button-prev:after {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSwiper {
+    max-height: 500px; /* Reduced from 600px */
+    height: 80vh; /* Further reduced height on mobile */
+  }
+  
+  .title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroSwiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroSwiper {
+    max-height: 450px; /* Reduced from 500px */
+    height: 75vh; /* Further reduced height on small mobile */
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .heroSwiper .swiper-button-next,
+  .heroSwiper .swiper-button-prev {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  .heroSwiper .swiper-button-next:after,
+  .heroSwiper .swiper-button-prev:after {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .heroSwiper {
+    max-height: 400px; /* Reduced from 450px */
+    height: 70vh; /* Smallest height on very small devices */
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}

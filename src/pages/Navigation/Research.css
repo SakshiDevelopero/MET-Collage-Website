@@ -1,0 +1,9 @@
+
+/* Custom styles for Research page */
+.research-card {
+  transition: all 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+}

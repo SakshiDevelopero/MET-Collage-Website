@@ -1,0 +1,9 @@
+
+/* Custom styles for Counseling page */
+.counselor-card {
+  transition: all 0.3s ease;
+}
+
+.counselor-card:hover {
+  transform: translateY(-5px);
+}

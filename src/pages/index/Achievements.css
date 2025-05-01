@@ -1,0 +1,12 @@
+
+.achievement-number {
+  font-weight: 700;
+}
+
+.achievement-card {
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+}

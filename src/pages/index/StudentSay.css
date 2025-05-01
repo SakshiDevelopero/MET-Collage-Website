@@ -1,0 +1,37 @@
+.student-say-section {
+  background-image: url('/src/assets/studentsay/studentsay.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Mobile view: push background image to bottom */
+@media (max-width: 768px) {
+  .student-say-section {
+    background-position: bottom;
+    min-height: 450px; /* Adjust height to image visibility */
+  }
+}
+
+.testimonialSwiper {
+  padding-bottom: 50px;
+}
+
+.testimonialSwiper .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+}
+
+/* Adjust testimonial width in mid-size screens */
+@media (min-width: 990px) and (max-width: 1568px) {
+  .testimonial-description {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

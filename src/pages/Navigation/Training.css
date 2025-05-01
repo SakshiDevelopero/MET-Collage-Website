@@ -1,0 +1,180 @@
+/* Training.css */
+
+:root {
+  /* Define Swiper colors globally */
+  --swiper-navigation-color: #800000 !important;
+  --swiper-pagination-color: #800000 !important;
+}
+
+.training-container {
+  background-color: #f5e2e2ce;
+  padding: 40px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.training-title {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #800000, #ff4d4d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.logo-card {
+  background-color: #8000001f;
+  padding: 5px 5px;
+  border-radius: 0px;
+  /* Apply a box shadow only to the right */
+  box-shadow: 5px 0 15px #800000;
+  transition: all 0.3s ease;
+  border: 1px solid #800000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.logo-card:hover {
+  transform: scale(1.05);
+  /* Remove shadow change on hover if needed or adjust accordingly */
+  box-shadow: 5px 0 15px #ff0000;
+  cursor: pointer;
+}
+
+.logo-card:hover .logo-image {
+  transform: scale(1.1);
+}
+
+.logo-image {
+  max-width: 130px;
+  max-height: 100px;
+  object-fit: contain;
+  filter: brightness(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+/* Company details grid */
+.company-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.company-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.company-image:hover {
+  transform: scale(1.05);
+}
+
+.dialog-content .swiper-button-next,
+.dialog-content .swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  color: #800000 !important; /* Keep as fallback */
+}
+
+.dialog-content .swiper-button-next:after,
+.dialog-content .swiper-button-prev:after {
+  font-size: 20px;
+  color: #800000 !important; /* Keep as fallback */
+}
+
+.dialog-content .swiper-pagination-bullet {
+  background-color: #800000 !important;
+  opacity: 0.5;
+}
+
+.dialog-content .swiper-pagination-bullet-active {
+  background-color: #800000 !important;
+  opacity: 1;
+}
+
+/* Add rule for potential SVG icons */
+.dialog-content .swiper-button-next svg,
+.dialog-content .swiper-button-prev svg {
+  fill: #800000 !important; /* Target SVG fill color */
+}
+
+/* Mobile responsive: Reduce container height */
+@media (max-width: 768px) {
+  .training-container {
+    min-height: 60vh; /* Reduced from 100vh for mobile */
+    padding: 20px;   /* Optional: reduce padding for mobile */
+  }
+}

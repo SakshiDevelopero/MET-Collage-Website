@@ -1,0 +1,9 @@
+
+/* Custom styles for Hotel page */
+.hotel-card {
+  transition: all 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}

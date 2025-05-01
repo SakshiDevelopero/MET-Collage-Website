@@ -1,0 +1,9 @@
+
+/* Custom styles for Advantage page */
+.advantage-card {
+  transition: all 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}

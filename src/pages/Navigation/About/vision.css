@@ -1,0 +1,50 @@
+/* Custom styles for Vision page */
+.vision-quote {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Card Swiper Styles */
+.vision-card-swiper {
+  width: 340px;
+  height: 500px;
+}
+
+.vision-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: white !important;
+  color: #800000;
+  box-shadow: 0 10px 20px rgba(128, 0, 0, 0.3);
+}
+
+.vision-card-content {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+.vision-card-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.vision-card-content li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 380px) {
+  .vision-card-swiper {
+    width: 300px;
+    height: 480px;
+  }
+}

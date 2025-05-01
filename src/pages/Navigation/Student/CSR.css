@@ -1,0 +1,9 @@
+
+/* Custom styles for CSR page */
+.csr-card {
+  transition: all 0.3s ease;
+}
+
+.csr-card:hover {
+  transform: translateY(-5px);
+}

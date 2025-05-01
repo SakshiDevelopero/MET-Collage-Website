@@ -1,0 +1,14 @@
+
+.research-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.research-image-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image-container {
+  overflow: hidden;
+}

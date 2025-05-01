@@ -1,0 +1,31 @@
+
+.chairman-content {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.chairman-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.chairman-footer {
+  border-top: 1px solid #eaeaea;
+  padding-top: 1.5rem;
+}
+
+.chairman-content h1 {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.chairman-content h1:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #550000;
+}
