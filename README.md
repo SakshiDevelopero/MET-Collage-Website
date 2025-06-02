@@ -32,7 +32,7 @@ The contact form is integrated with **Nodemailer** to send emails directly from 
 
 | Layer       | Technology Used                    |
 |-------------|------------------------------------|
-| Frontend    | React, Tailwind CSS, Swiper.js     |
+| Frontend    | React,TypeScript,Tailwind CSS, Swiper.js     |
 | Backend     | Node.js, Express.js                |
 | Email       | Nodemailer                         |
 | Animations  | CSS transitions, AOS, Framer Motion|
