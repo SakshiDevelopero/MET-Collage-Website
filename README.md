@@ -1,7 +1,7 @@
 # 🎓 MET Institute of Technology, Bhujbal Knowledge City - College Website
 
 This project is a dynamic and responsive college website developed for **MET Institute of Technology, Bhujbal Knowledge City**.
-The frontend is built using **React** with **Tailwind CSS**, incorporating modern animations,aso,carousels via **Swiper.js**, and a robust backend in **Node.js**. 
+The frontend is built using **React** with **Tailwind CSS**,**Typescript** incorporating modern animations,aso,carousels via **Swiper.js**, and a robust backend in **Node.js**. 
 The contact form is integrated with **Nodemailer** to send emails directly from the website.
 
 ---
